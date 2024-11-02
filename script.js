@@ -41,6 +41,10 @@ let countdownInterval;
 function startTimer() {
   countdownInterval = setInterval(updateCountdown, 1000);
 }
+function stopTimer() {
+  clearInterval(countdownInterval);
+  countdownInterval = null;
+}
 
 function updateCountdown() {
   const minutes = Math.floor(time / 60);
@@ -49,7 +53,6 @@ function updateCountdown() {
   countdownElement.textContent = `${String(minutes).padStart(2, "0")}:${String(
     seconds
   ).padStart(2, "0")}`;
-
   if (correctAnswer === 10) {
     return;
   } else if (time === 0) {
@@ -119,6 +122,7 @@ function playAgain() {
       targetSpan.textContent = "";
     }
   }
+  return 1;
 }
 
 playBtn.addEventListener("click", show);
