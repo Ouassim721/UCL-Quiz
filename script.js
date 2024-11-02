@@ -35,15 +35,25 @@ const answerDisplay = [
 const answeredIndices = new Set(); // Pour garder la trace des réponses déjà fournies
 
 //timer
-let time = 120;
+const initialeTime = 120;
+let time = initialeTime;
 let countdownInterval;
 
 function startTimer() {
-  countdownInterval = setInterval(updateCountdown, 1000);
+  if (!countdownInterval) {
+    countdownInterval = setInterval(updateCountdown, 1000);
+  }
 }
 function stopTimer() {
   clearInterval(countdownInterval);
   countdownInterval = null;
+}
+
+function resetTimer() {
+  stopTimer();
+  time = initialeTime;
+  updateCountdown();
+  startTimer();
 }
 
 function updateCountdown() {
