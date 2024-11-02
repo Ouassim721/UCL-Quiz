@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Football Game</title>
+  </head>
+  <body>
+    <div class="site">
+      <header class="nav-bar">
+        <div class="logo"><i class="fa-regular fa-futbol"></i>Ouassim Quiz</div>
+      </header>
+    </div>
+    <div class="pitch">
+      <div class="verticale-ligne"></div>
+      <div class="cercle"></div>
+    </div>
+    <section class="title">
+      <div class="title-content">
+        <div><h3>Quiz of the Day :</h3></div>
+        <div><h3>Can you name the top 10 scorers in in 2min ?</h3></div>
+        <h1 id="countdown">02:00</h1>
+        <button onclick="startTimer()" class="btn btn-play" id="play">
+          PLAY
+        </button>
+      </div>
+    </section>
+    <div class="quiz">
+      <div class="input-field">
+        <input
+          type="text"
+          name="player"
+          id="userInput"
+          placeholder="Enter an answer..."
+        />
+        <button class="btn btn-again" id="play-again">PLAY AGAIN</button>
+        <button class="btn btn-give-up" id="give-up">GIVE UP</button>
+      </div>
+      <div class="answers-table">
+        <div class="quizly-answer">
+          <div class="quizly-answer-row row-A">
+            <div class="quizly-answer-column column-A">
+              <div class="quizly-answer-total-goals">140</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="0" class="player"></span>
+              </div>
+            </div>
+            <div class="quizly-answer-column column-B">
+              <div class="quizly-answer-total-goals">129</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="1" class="player"></span>
+              </div>
+            </div>
+          </div>
+          <div class="quizly-answer-row row-B">
+            <div class="quizly-answer-column column-A">
+              <div class="quizly-answer-total-goals">94*</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="2" class="player"></span>
+              </div>
+            </div>
+            <div class="quizly-answer-column column-B">
+              <div class="quizly-answer-total-goals">90</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="3" class="player"></span>
+              </div>
+            </div>
+          </div>
+          <div class="quizly-answer-row row-C">
+            <div class="quizly-answer-column column-A">
+              <div class="quizly-answer-total-goals">71</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="4" class="player"></span>
+              </div>
+            </div>
+            <div class="quizly-answer-column column-B">
+              <div class="quizly-answer-total-goals">56</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="5" class="player"></span>
+              </div>
+            </div>
+          </div>
+          <div class="quizly-answer-row row-D">
+            <div class="quizly-answer-column column-A">
+              <div class="quizly-answer-total-goals">54*</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="6" class="player"></span>
+              </div>
+            </div>
+            <div class="quizly-answer-column column-B">
+              <div class="quizly-answer-total-goals">50</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="7" class="player"></span>
+              </div>
+            </div>
+          </div>
+          <div class="quizly-answer-row row-E">
+            <div class="quizly-answer-column column-A">
+              <div class="quizly-answer-total-goals">49*</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="8" class="player"></span>
+              </div>
+            </div>
+            <div class="quizly-answer-column column-B">
+              <div class="quizly-answer-total-goals">48</div>
+              <div class="quizly-answer-player-name">
+                <span data-player="9" class="player"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8d8c815e78.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
