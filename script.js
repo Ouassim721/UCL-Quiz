@@ -4,8 +4,7 @@ const playBtn = document.getElementById("play");
 const giveUp = document.getElementById("give-up");
 const Again = document.getElementById("play-again");
 const countdownElement = document.getElementById("countdown");
-quiz.classList.add("hide");
-countdownElement.classList.add("hide");
+
 let correctAnswer = 0;
 const tab = [
   ["cristiano ronaldo", "ronaldo"],

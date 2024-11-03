@@ -4,30 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="football_icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="football.png" type="image/x-icon" />
     <title>Football Game</title>
   </head>
   <body>
+    <div class="image"></div>
     <div class="site">
       <header class="nav-bar">
-        <div class="logo"><i class="fa-regular fa-futbol"></i>Ouassim Quiz</div>
+        <h4 class="logo"><i class="fa-regular fa-futbol"></i>Ouassim Quiz</h4>
       </header>
     </div>
-    <div class="pitch">
+    <!-- <div class="pitch">
       <div class="verticale-ligne"></div>
       <div class="cercle"></div>
-    </div>
+      <div class="small-cercle"></div>
+    </div> -->
     <section class="title">
       <div class="title-content">
         <div><h3>Quiz of the Day :</h3></div>
         <div><h3>Can you name the top 10 scorers in in 2min ?</h3></div>
-        <h1 id="countdown">02:00</h1>
+        <h1 id="countdown" class="hide">02:00</h1>
         <button onclick="startTimer()" class="btn btn-play" id="play">
           PLAY
         </button>
       </div>
     </section>
-    <div class="quiz">
+    <div class="quiz hide">
       <div class="input-field">
         <input
           type="text"
