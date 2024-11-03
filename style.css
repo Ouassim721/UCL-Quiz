@@ -74,19 +74,24 @@ body {
   font-size: 0.8rem;
   color: #888;
 }
+.btns {
+  width: 30%;
+  display: flex;
+  gap: 2px;
+}
 .btn {
   height: 43px;
   border-radius: 10px;
-  width: 13%;
+  width: 95%;
   font-weight: 700;
   cursor: pointer;
 }
-.input-field .btn-again,
+.btn-again,
 .btn-play {
   background-color: #b967f2;
   color: #fff;
 }
-.input-field .btn-give-up {
+.btn-give-up {
   background: transparent;
 }
 .btn-play {
@@ -138,4 +143,27 @@ body {
 }
 .hide {
   display: none;
+}
+@media screen and (max-width: 800px) {
+  .quizly-answer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-field {
+    flex-direction: column;
+  }
+  .input-field .btns {
+    justify-content: space-between;
+    max-width: 70%;
+    width: 300px;
+  }
+  .btn {
+    width: 110px;
+  }
+  .quizly-answer-column {
+    width: 70%;
+  }
+  .quizly-answer-total-goals {
+    width: 40%;
+  }
 }

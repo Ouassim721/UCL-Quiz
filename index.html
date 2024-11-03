@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="football_icon.png" type="image/x-icon" />
     <title>Football Game</title>
   </head>
   <body>
@@ -34,12 +35,14 @@
           id="userInput"
           placeholder="Enter an answer..."
         />
-        <button onclick="resetTimer()" class="btn btn-again" id="play-again">
-          PLAY AGAIN
-        </button>
-        <button onclick="stopTimer()" class="btn btn-give-up" id="give-up">
-          GIVE UP
-        </button>
+        <div class="btns">
+          <button onclick="resetTimer()" class="btn btn-again" id="play-again">
+            PLAY AGAIN
+          </button>
+          <button onclick="stopTimer()" class="btn btn-give-up" id="give-up">
+            GIVE UP
+          </button>
+        </div>
       </div>
       <div class="answers-table">
         <div class="quizly-answer">
