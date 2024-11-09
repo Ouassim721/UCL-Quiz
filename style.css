@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  /* background-color: #c2f45d; */
   color: #fefefe;
 }
 .image {
@@ -27,42 +26,14 @@ body {
 .nav-bar {
   height: 60px;
   background-color: transparent;
-  /* background-color: #6b4; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* }
-.verticale-ligne,
-.cercle,
-.small-cercle {
-  left: 50%;
-  top: calc(50% + 60px);
-  transform: translate(-50%, -50%);
-  position: fixed;
-  z-index: -1;
-}
-.verticale-ligne {
-  background-color: #fff;
-
-  width: 15px;
-  height: 100vh;
-}
-.cercle {
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-  border: 15px solid white;
-}
-.small-cercle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
-} */
 .logo {
   padding: 10px;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  letter-spacing: 10px;
 }
 .logo i {
   margin: 0 10px 0 0;
@@ -72,7 +43,6 @@ body {
   justify-content: center;
 }
 .title .title-content {
-  /* background-color: #daf89e; */
   color: #fefefe;
   padding: 15px 25px;
   margin: 30px auto;
@@ -117,7 +87,6 @@ body {
 .btn-again,
 .btn-play {
   background-color: #235d9b;
-  /* background-color: #b967f2; */
   color: #fff;
 }
 .btn-give-up {
@@ -162,7 +131,6 @@ body {
   align-items: center;
   text-align: center;
   background-color: #dedede;
-  /* background-color: #daf89e; */
   color: #000;
   width: 50%;
   border-radius: 0 8px 8px 0;
